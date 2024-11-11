@@ -1,0 +1,188 @@
+# .gitignore
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env
+.venv
+venv.bak/
+env.bak/
+
+### Terraform ###
+# Local .terraform directories
+**/.terraform/*
+.terraform/
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude sensitive variables files
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# CLI configuration files
+.terraformrc
+terraform.rc
+.terraform.lock.hcl
+
+### IDE/Editor ###
+# VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm/IntelliJ
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+### Testing ###
+# Test coverage
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.pytest_cache/
+.hypothesis/
+
+### Documentation ###
+# MkDocs
+site/
+docs/_build/
+
+### Logs ###
+*.log
+logs/
+log/
+
+### macOS ###
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+### Linux ###
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+### Security ###
+# Security / Secrets
+*.pem
+*.key
+*.crt
+*.csr
+*.srl
+*.p12
+*.pfx
+*.der
+*.cer
+.env.local
+.env.*.local
+credentials.json
+*credentials*
+*secret*
+.secrets/
+
+### AWS ###
+.aws/credentials
+.aws/config
+
+### Tools ###
+# Bandit
+bandit-report.json
+
+# Safety
+safety-report.json
+
+# Checkov
+checkov-report.json
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# isort
+.isort.cfg
+
+# Coverage
+.coverage.*
+
+### Project Specific ###
+# Lambda deployment packages
+*.zip
+
+# Local development
+local.env
+*.local
+
+# Temporary files
+temp/
+tmp/
+.tmp/
+
+# Reports
+reports/
+*.report
+*.sarif
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~.nib
